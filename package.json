@@ -1,0 +1,31 @@
+{
+  "name": "me",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier src --check&&eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts --ignore-path .gitignore",
+    "fix": "prettier src --write&&eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "zyle.css": "^0.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2"
+  }
+}
