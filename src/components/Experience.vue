@@ -13,6 +13,7 @@ const jobs = [
       'Manutenção e desenvolvimento da plataforma principal e projetos internos usando React,js, Next.js, React Query e Tailwind CSS.',
       'Atendimento de demandas e tarefas da empresa. ',
     ],
+    skills: ['React.js', 'Next.js', 'Javascript', 'Typescript', 'SASS', 'Tailwind'],
   },
   {
     position: 'Desenvolvedor Front-End',
@@ -24,17 +25,7 @@ const jobs = [
       'Manutenção e desenvolvimento da plataforma e módulos para projetos internos.',
       'Atendimento de demandas e tarefas da empresa.',
     ],
-    skills: [
-      'Vue.js',
-      'Javascript',
-      'Bootstrap',
-      'Sass',
-      'Node.js',
-      'Docker',
-      'HTML',
-      'CSS',
-      'Git',
-    ],
+    skills: ['Vue.js', 'Javascript', 'Node.js', 'SCSS', 'Bootstrap'],
   },
 ];
 
@@ -73,6 +64,14 @@ function selectjob(index: number) {
               class="pb-1"
             >
               {{ description }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-skills">
+          <ul>
+            <li v-for="(skill, index) in jobs[jobSelected].skills" :key="index">
+              {{ skill }}
             </li>
           </ul>
         </div>
@@ -133,6 +132,23 @@ function selectjob(index: number) {
         list-style: disc;
         margin-left: 20px;
         margin-bottom: 5px;
+      }
+    }
+
+    .job-skills {
+      margin-top: 20px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          background: rgba(56, 139, 255, 0.5);
+          color: #fff;
+          border-radius: 20px;
+          padding: 5px 10px;
+          margin: 5px;
+          font-size: 0.85rem;
+        }
       }
     }
   }
