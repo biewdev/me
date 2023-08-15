@@ -78,7 +78,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .donut-area {
   overflow: hidden;
   height: auto;
@@ -87,14 +87,11 @@ onMounted(() => {
   align-items: start;
   font-size: 8px;
   user-select: none;
-  .donut {
-    width: auto;
-  }
 }
 
 .me {
   .title {
-    font-size: 56px;
+    font-size: 3rem;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2s steps(50, end);
