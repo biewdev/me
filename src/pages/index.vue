@@ -62,14 +62,15 @@ onMounted(() => {
       <pre class="donut"></pre>
     </div>
 
-    <section class="me">
-      <h1 class="title">Gabriel Augusto.<span></span></h1>
+    <h1 class="title">Gabriel Augusto.<span></span></h1>
 
+    <section class="me">
       <p class="subtitle">
-        Atualmente sou um desenvolvedor full-stack e estou no meu terceiro ano de estudos em ciência
-        da computação. Minha jornada na programação teve início em 2014, quando comecei a criar
-        minigames e complementos para jogos utilizando Java. Com o passar do tempo, direcionei meu
-        interesse para o desenvolvimento web, que se tornou minha principal área de especialização.
+        Atualmente sou um desenvolvedor full-stack e estou no meu terceiro ano de estudos em
+        <span class="highlight">ciência da computação</span>. Minha jornada na programação teve
+        início em 2014, quando comecei a criar minigames e complementos para jogos utilizando Java.
+        Com o passar do tempo, direcionei meu interesse para o desenvolvimento web, que se tornou
+        minha principal área de especialização.
       </p>
     </section>
 
@@ -94,28 +95,30 @@ onMounted(() => {
   }
 }
 
-.me {
-  .title {
-    font-size: $font-size-h1;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 2s steps(50, end);
-    line-height: 4rem;
-    margin: 1.2rem 0;
-    @media (max-width: screen-breakpoint('md')) {
-      font-size: 2rem;
-    }
+.title {
+  font-size: $font-size-h1;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(50, end);
+  line-height: 4rem;
+  margin: 1.2rem 0;
+
+  @media (max-width: screen-breakpoint('md')) {
+    font-size: 2rem;
   }
+
+  span {
+    margin-left: 5px;
+    border-right: 5px solid $primary;
+    animation: blink 1s infinite;
+  }
+}
+.me {
   .subtitle {
     max-width: 50rem;
     line-height: 1.4rem;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
-  }
-  span {
-    margin-left: 5px;
-    border-right: 5px solid $primary;
-    animation: blink 1s infinite;
   }
 }
 
