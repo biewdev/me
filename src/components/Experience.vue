@@ -81,8 +81,13 @@ function selectjob(index: number) {
 </template>
 
 <style lang="scss" scoped>
+@import '@colors';
 .experience {
   display: flex;
+  @media (max-width: screen-breakpoint('md')) {
+    flex-direction: column;
+  }
+
   .job-list {
     display: flex;
     flex-direction: column;
@@ -96,7 +101,7 @@ function selectjob(index: number) {
       margin-right: 3px;
       &.active {
         margin-right: 0px;
-        border-right: 3px solid #ffc421;
+        border-right: 3px solid $primary;
       }
       &:hover {
         cursor: pointer;
@@ -109,7 +114,7 @@ function selectjob(index: number) {
       font-weight: 500;
       text-transform: uppercase;
       &.active {
-        color: #ffc421;
+        color: $primary;
       }
     }
     .job-date {
@@ -120,6 +125,11 @@ function selectjob(index: number) {
 
   .job-content {
     margin-left: 50px;
+
+    @media (max-width: screen-breakpoint('md')) {
+      margin-top: 1.5rem;
+      margin-left: 0;
+    }
     .job-title {
       font-size: 1.4rem;
       font-weight: 600;

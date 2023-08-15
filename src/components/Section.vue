@@ -10,16 +10,17 @@ const props = defineProps<{ title: string }>();
 </template>
 
 <style lang="scss" scoped>
+@import '@colors';
 section {
   margin-top: 40px;
 
   h2 {
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     text-transform: lowercase;
 
     span {
-      color: #ffc421;
+      color: $primary;
     }
   }
 }

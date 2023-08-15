@@ -57,7 +57,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container is-md mt-7 px-3">
+  <div class="container is-md px-3">
     <div class="donut-area">
       <pre class="donut"></pre>
     </div>
@@ -79,7 +79,9 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@import '@colors';
 .donut-area {
+  margin-top: 4rem;
   overflow: hidden;
   height: auto;
   width: auto;
@@ -87,16 +89,22 @@ onMounted(() => {
   align-items: start;
   font-size: 8px;
   user-select: none;
+  @media (max-width: screen-breakpoint('md')) {
+    display: none;
+  }
 }
 
 .me {
   .title {
-    font-size: 3rem;
+    font-size: $font-size-h1;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2s steps(50, end);
     line-height: 4rem;
-    margin: 20px 0px;
+    margin: 1.2rem 0;
+    @media (max-width: screen-breakpoint('md')) {
+      font-size: 2rem;
+    }
   }
   .subtitle {
     max-width: 50rem;
@@ -106,7 +114,7 @@ onMounted(() => {
   }
   span {
     margin-left: 5px;
-    border-right: 5px solid #ffc421;
+    border-right: 5px solid $primary;
     animation: blink 1s infinite;
   }
 }
