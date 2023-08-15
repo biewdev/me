@@ -7,7 +7,7 @@ const jobs = [
   {
     position: 'Desenvolvedor Front-End',
     name: 'QFlash',
-    start_date: 'Fev 2022',
+    start_date: 'Fev 2023',
     end_date: 'Até o momento',
     description: [
       'Manutenção e desenvolvimento da plataforma principal e projetos internos usando React,js, Next.js, React Query e Tailwind CSS.',
