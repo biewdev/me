@@ -11,6 +11,7 @@ const props = defineProps<{ title: string }>();
 
 <style lang="scss" scoped>
 @import '@colors';
+
 section {
   margin-top: 40px;
 

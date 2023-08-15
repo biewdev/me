@@ -12,3 +12,11 @@ body {
 li {
   list-style: none;
 }
+
+.highlight {
+  text-decoration: underline;
+  text-decoration-color: rgba($color-font, 0.5);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}

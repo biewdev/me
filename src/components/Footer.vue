@@ -5,9 +5,11 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@colors';
+
 footer {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: $color-font-secondary;
   text-align: center;
 }
 </style>
