@@ -54,7 +54,10 @@ function selectjob(index: number) {
       </div>
 
       <div class="job-content">
-        <div class="job-title">{{ jobs[jobSelected].position }} * {{ jobs[jobSelected].name }}</div>
+        <div class="job-title">
+          {{ jobs[jobSelected].position }} *
+          <span class="highlight">{{ jobs[jobSelected].name }}</span>
+        </div>
 
         <div class="job-description">
           <ul>
@@ -99,9 +102,19 @@ function selectjob(index: number) {
       border-radius: 2px;
       padding-right: 20px;
       margin-right: 3px;
-      &.active {
+      @media (max-width: screen-breakpoint('xs')) {
         margin-right: 0px;
-        border-right: 3px solid $primary;
+        margin-bottom: 3px;
+      }
+      &.active {
+        @media (min-width: screen-breakpoint('xs')) {
+          margin-right: 0px;
+          border-right: 3px solid $primary;
+        }
+        @media (max-width: screen-breakpoint('xs')) {
+          margin-bottom: 0px;
+          border-bottom: 3px solid $primary;
+        }
       }
       &:hover {
         cursor: pointer;
@@ -118,7 +131,7 @@ function selectjob(index: number) {
       }
     }
     .job-date {
-      color: rgba(255, 255, 255, 0.7);
+      color: $color-font-secondary;
       font-size: 0.85rem;
     }
   }
@@ -136,7 +149,7 @@ function selectjob(index: number) {
     }
     .job-description {
       margin-top: 20px;
-      color: rgba(255, 255, 255, 0.7);
+      color: $color-font-secondary;
       font-size: 300;
       li {
         list-style: disc;
@@ -152,7 +165,7 @@ function selectjob(index: number) {
         display: flex;
         flex-wrap: wrap;
         li {
-          background: rgba(56, 139, 255, 0.5);
+          background: rgba($secondary, 0.5);
           color: #fff;
           border-radius: 20px;
           padding: 5px 10px;
