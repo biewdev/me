@@ -1,5 +1,7 @@
 <template>
-  <footer class="mt-7 mb-2">Feito por Gabriel Augusto.<br />Todos os direitos reservados. &copy;</footer>
+  <footer class="mt-7 mb-2">
+    Feito por Gabriel Augusto.<br />Todos os direitos reservados. &copy;
+  </footer>
 </template>
 
 <style lang="scss" scoped>
