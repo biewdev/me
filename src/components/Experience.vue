@@ -48,6 +48,7 @@ function selectjob(index: number) {
             <div class="job-title" :class="{ active: jobSelected === index }">
               {{ job.name }}
             </div>
+
             <div class="job-date">{{ job.start_date }} - {{ job.end_date }}</div>
           </li>
         </ul>
@@ -87,6 +88,7 @@ function selectjob(index: number) {
 @import '@colors';
 .experience {
   display: flex;
+
   @media (max-width: screen-breakpoint('md')) {
     flex-direction: column;
   }
@@ -94,6 +96,7 @@ function selectjob(index: number) {
   .job-list {
     display: flex;
     flex-direction: column;
+
     li {
       min-width: 220px;
       padding-top: 10px;
@@ -102,20 +105,24 @@ function selectjob(index: number) {
       border-radius: 2px;
       padding-right: 20px;
       margin-right: 3px;
+
       @media (max-width: screen-breakpoint('xs')) {
         margin-right: 0px;
         margin-bottom: 3px;
       }
+
       &.active {
         @media (min-width: screen-breakpoint('xs')) {
           margin-right: 0px;
           border-right: 3px solid $primary;
         }
+
         @media (max-width: screen-breakpoint('xs')) {
           margin-bottom: 0px;
           border-bottom: 3px solid $primary;
         }
       }
+
       &:hover {
         cursor: pointer;
       }
@@ -126,10 +133,12 @@ function selectjob(index: number) {
       font-size: 1.1rem;
       font-weight: 500;
       text-transform: uppercase;
+
       &.active {
         color: $primary;
       }
     }
+
     .job-date {
       color: $color-font-secondary;
       font-size: 0.85rem;
@@ -143,14 +152,17 @@ function selectjob(index: number) {
       margin-top: 1.5rem;
       margin-left: 0;
     }
+
     .job-title {
       font-size: 1.4rem;
       font-weight: 600;
     }
+
     .job-description {
       margin-top: 20px;
       color: $color-font-secondary;
       font-size: 300;
+
       li {
         list-style: disc;
         margin-left: 20px;
@@ -164,6 +176,7 @@ function selectjob(index: number) {
       ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
           background: rgba($secondary, 0.5);
           color: #fff;

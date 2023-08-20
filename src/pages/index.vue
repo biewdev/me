@@ -46,6 +46,7 @@ import Footer from '../components/Footer.vue';
     animation: blink 1s infinite;
   }
 }
+
 .me {
   .subtitle {
     max-width: 50rem;

@@ -10,13 +10,16 @@ import MailIcon from './icons/MailIcon.vue';
       <a href="mailto:gabrielaugustodev@gmail.com" target="_mail" aria-label="Email">
         <mail-icon />
       </a>
+
       <a href="https://github.com/biewdev" target="_github" aria-label="Github">
         <github-icon />
       </a>
+
       <a href="https://www.linkedin.com/in/biewdev/" target="_linkedin" aria-label="Linkedin">
         <linkedin-icon />
       </a>
     </div>
+
     Feito por Gabriel Augusto.<br />Todos os direitos reservados. &copy;
   </footer>
 </template>

@@ -70,6 +70,7 @@ onMounted(() => {
   align-items: start;
   font-size: 8px;
   user-select: none;
+
   @media (max-width: screen-breakpoint('md')) {
     display: none;
   }
