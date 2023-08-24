@@ -1,0 +1,28 @@
+[
+  {
+    "position": "Desenvolvedor Front-End",
+    "name": "QFlash",
+    "start_date": "Fev 2023",
+    "end_date": "Até o momento",
+    "description": [
+      "Utilização de tecnologias como React,js, Next.js, React Query e Tailwind CSS, implementação de gerenciamento de estado, criação de custom hooks e integração de APIs.",
+      "Desenvolvimento de testes unitários para componentes e páginas, para garantir que o código seja estável e confiável.",
+      "Melhoria de desempenho, que inclui a identificação de gargalos e a implementação de otimizações para aumentar a velocidade de carregamento.",
+      "Manutenção e desenvolvimento da plataforma principal e projetos internos.",
+      "Atendimento de demandas e tarefas da empresa. "
+    ],
+    "skills": ["React.js", "Next.js", "Javascript", "Typescript", "SASS", "Tailwind"]
+  },
+  {
+    "position": "Desenvolvedor Front-End",
+    "name": "Samplemed",
+    "start_date": "Abr 2022",
+    "end_date": "Fev 2023",
+    "description": [
+      "Participei ativamente da migração do Vue.js 2 para o Vue.js 3, contribuindo para o processo de atualização da tecnologia.",
+      "Manutenção e desenvolvimento da plataforma e módulos para projetos internos.",
+      "Atendimento de demandas e tarefas da empresa."
+    ],
+    "skills": ["Vue.js", "Javascript", "Node.js", "SCSS", "Bootstrap"]
+  }
+]
