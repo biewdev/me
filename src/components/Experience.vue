@@ -1,33 +1,9 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import Section from './Section.vue';
-const jobSelected = ref(0);
+import jobs from '../data/jobs.json';
 
-const jobs = [
-  {
-    position: 'Desenvolvedor Front-End',
-    name: 'QFlash',
-    start_date: 'Fev 2023',
-    end_date: 'Até o momento',
-    description: [
-      'Manutenção e desenvolvimento da plataforma principal e projetos internos usando React,js, Next.js, React Query e Tailwind CSS.',
-      'Atendimento de demandas e tarefas da empresa. ',
-    ],
-    skills: ['React.js', 'Next.js', 'Javascript', 'Typescript', 'SASS', 'Tailwind'],
-  },
-  {
-    position: 'Desenvolvedor Front-End',
-    name: 'Samplemed',
-    start_date: 'Abr 2022',
-    end_date: 'Fev 2023',
-    description: [
-      'Colaborei com a migração do Vue.js 2 para o Vue.js 3.',
-      'Manutenção e desenvolvimento da plataforma e módulos para projetos internos.',
-      'Atendimento de demandas e tarefas da empresa.',
-    ],
-    skills: ['Vue.js', 'Javascript', 'Node.js', 'SCSS', 'Bootstrap'],
-  },
-];
+const jobSelected = ref(0);
 
 function selectjob(index: number) {
   jobSelected.value = index;
