@@ -5,7 +5,7 @@
     "start_date": "Fev 2023",
     "end_date": "Até o momento",
     "description": [
-      "Utilização de tecnologias como React,js, Next.js, React Query e Tailwind CSS, Styled Components, implementação de gerenciamento de estado, criação de custom hooks e integração de APIs.",
+      "Utilização de tecnologias como React,js, Next.js, React Query, Tailwind CSS, Styled Components, implementação de gerenciamento de estado, criação de custom hooks e integração de APIs.",
       "Desenvolvimento de testes unitários para componentes e páginas, para garantir que o código seja estável e confiável.",
       "Melhoria de desempenho, que inclui a identificação de gargalos e a implementação de otimizações para aumentar a velocidade de carregamento.",
       "Manutenção e desenvolvimento da plataforma principal e projetos internos.",
